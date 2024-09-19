@@ -21,14 +21,14 @@ const data = useLoaderData();
   return (
     <div className='text-center m-4 bg-gray-500 text-white'>
       GitHub Repos : {data?.public_repos}
-      <img src={data.avatar_url} alt="Git Profile pic" width={500} />
+      <img src={data.avatar_url} alt="Git Profile pic" width={700} />
     </div>
   )
 }
 
 export default GitHub
 
-export const githubInfoLoader = async () =>{
+export const  githubInfoLoader = async () =>{
     const response = await fetch('https://api.github.com/users/shiprasaini99')
     return response.json();
 }

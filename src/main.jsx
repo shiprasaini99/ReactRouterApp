@@ -22,7 +22,7 @@ import GitHub, { githubInfoLoader } from './components/GitHub/GitHub.jsx'
 //         path:"about",
 //         element:<About/>
 //       },{
-//         path:"contactUs",
+//         path:"contact",
 //         element:<Contact/>
 //       }
 //     ]
@@ -34,7 +34,7 @@ const router = createBrowserRouter(
     <Route path ='/' element={<Layout/>}>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
-      <Route path='/contactUs' element={<Contact/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       <Route path='/user/:userid' element={<User/>}/>
       <Route loader={githubInfoLoader}
       path='/github' element={<GitHub/>}/>
